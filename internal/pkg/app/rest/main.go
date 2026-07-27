@@ -18,9 +18,7 @@ type app struct {
 func New(h contracts.Handlers, l contracts.Logger, c contracts.RestConfig) *app {
 	return &app{
 		h: h,
-		l: l,
-		c: c,
-	}
+		l: l, c: c}
 }
 
 func (a *app) Run() error {
